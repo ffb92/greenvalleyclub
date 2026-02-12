@@ -1,13 +1,12 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
+import AgeGateModal from './components/AgeGateModal';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
 import Pricing from './sections/Pricing';
-import Timeline from './sections/Timeline';
+import CannanasForm from './sections/CannanasForm';
 import Location from './sections/Location';
 import Strains from './sections/Strains';
 import QualityGrowth from './sections/QualityGrowth';
-import AISommelier from './sections/AISommelier';
-import Games from './sections/Games';
 import Team from './sections/Team';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
@@ -37,16 +36,15 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background">
+      <AgeGateModal />
       <Navbar />
       <main>
         <Hero />
-        <Pricing />
-        <Timeline />
         <Location />
+        <Pricing />
+        <CannanasForm />
         <Strains />
         <QualityGrowth />
-        <AISommelier />
-        <Games />
         <Team />
         <FAQ />
       </main>
