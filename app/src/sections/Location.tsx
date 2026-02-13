@@ -108,7 +108,7 @@ export default function Location() {
                 <div className="absolute bottom-4 right-4 bg-card/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border max-w-[220px]">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-[#F5F0E6]" />
+                      <MapPin className="w-5 h-5 text-[#F8F3DF]" />
                     </div>
                     <div>
                       <h5 className="font-semibold text-foreground text-sm">Zentraler Spot</h5>

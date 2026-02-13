@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Button
               onClick={() => scrollToSection('#pricing')}
-              className="bg-primary hover:bg-primary/90 text-[#F5F0E6] rounded-full px-6"
+              className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-6"
             >
               Mitglied werden
             </Button>
@@ -101,7 +101,7 @@ export default function Navbar() {
                 ))}
                 <Button
                   onClick={() => scrollToSection('#pricing')}
-                  className="bg-primary hover:bg-primary/90 text-[#F5F0E6] rounded-full mt-4"
+                  className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full mt-4"
                 >
                   Mitglied werden
                 </Button>

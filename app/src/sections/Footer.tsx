@@ -48,7 +48,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-[#F5F0E6]" />
+                <Leaf className="w-6 h-6 text-[#F8F3DF]" />
               </div>
               <span className="text-xl font-bold text-foreground">GREEN VALLEY CLUB</span>
             </div>

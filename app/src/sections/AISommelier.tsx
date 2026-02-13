@@ -100,7 +100,7 @@ export default function AISommelier() {
                 onClick={() => handleSend(inputValue)}
                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/90 rounded-lg"
               >
-                <Send className="w-4 h-4 text-[#F5F0E6]" />
+                <Send className="w-4 h-4 text-[#F8F3DF]" />
               </Button>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function AISommelier() {
                     <div
                       className={`inline-block max-w-[80%] p-4 rounded-2xl ${
                         msg.type === 'user'
-                          ? 'bg-primary text-[#F5F0E6] rounded-br-md'
+                          ? 'bg-primary text-[#F8F3DF] rounded-br-md'
                           : 'bg-secondary text-foreground rounded-bl-md'
                       }`}
                     >

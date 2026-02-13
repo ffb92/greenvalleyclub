@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, ChevronDown, MessageCircle } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -78,7 +78,7 @@ export default function Pricing() {
               {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <Badge className="bg-primary text-[#F5F0E6] px-4 py-1 text-xs font-semibold uppercase tracking-wider">
+                  <Badge className="bg-primary text-[#F8F3DF] px-4 py-1 text-xs font-semibold uppercase tracking-wider">
                     Most Popular
                   </Badge>
                 </div>
@@ -110,7 +110,7 @@ export default function Pricing() {
                     <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
                       pkg.popular ? 'bg-primary' : 'bg-primary/10'
                     }`}>
-                      <Check className={`w-3 h-3 ${pkg.popular ? 'text-[#F5F0E6]' : 'text-primary'}`} />
+                      <Check className={`w-3 h-3 ${pkg.popular ? 'text-[#F8F3DF]' : 'text-primary'}`} />
                     </div>
                     <span className="text-sm text-muted-foreground">{feature}</span>
                   </li>
@@ -121,7 +121,7 @@ export default function Pricing() {
               <Button
                 className={`w-full rounded-full py-6 font-semibold transition-all ${
                   pkg.popular
-                    ? 'bg-primary hover:bg-primary/90 text-[#F5F0E6]'
+                    ? 'bg-primary hover:bg-primary/90 text-[#F8F3DF]'
                     : 'bg-primary/10 hover:bg-primary/20 text-primary'
                 }`}
               >
@@ -143,31 +143,6 @@ export default function Pricing() {
           <p className="text-sm text-muted-foreground mt-3">
             Enthält alle Staffelungen aus der Beitragsordnung von 7,5g bis 50g.
           </p>
-        </div>
-
-        {/* Info Box */}
-        <div className="reveal max-w-3xl mx-auto">
-          <div className="bg-card rounded-3xl p-6 lg:p-8 border border-border">
-            <p className="text-muted-foreground text-center leading-relaxed mb-6">
-              Um Teil unseres Cannabis Social Clubs zu werden, fällt eine einmalige 
-              Aufnahmegebühr von <span className="text-foreground font-semibold">50 €</span> sowie 
-              ein monatlicher Grundbeitrag von <span className="text-foreground font-semibold">20 €</span> an. 
-              Diese Beiträge sind umsatzsteuerfrei. Die variablen Kosten je Staffelung enthalten 19% MwSt. 
-              Eine genaue Übersicht findest du in unserer Beitragsordnung.
-            </p>
-            <div className="text-center">
-              <p className="text-xs font-medium tracking-[0.15em] text-muted-foreground uppercase mb-3">
-                Bleib auf dem Laufenden
-              </p>
-              <Button
-                variant="outline"
-                className="rounded-full border-primary text-primary hover:bg-primary hover:text-[#F5F0E6] transition-all"
-              >
-                <MessageCircle className="w-4 h-4 mr-2" />
-                Jetzt WhatsApp beitreten
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -40,11 +40,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <QualityGrowth />
         <Location />
         <Pricing />
         <CannanasForm />
         <Strains />
-        <QualityGrowth />
         <Team />
         <FAQ />
       </main>

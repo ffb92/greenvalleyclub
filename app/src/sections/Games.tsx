@@ -55,7 +55,7 @@ export default function Games() {
 
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-[#F5F0E6] rounded-full px-8 py-6 text-base font-semibold group"
+              className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold group"
             >
               Spiele starten
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

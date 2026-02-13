@@ -5,20 +5,20 @@
 @layer base {
   :root {
     /* Green Valley Brand Colors */
-    --background: 45 33% 94%; /* Cream/beige #F5F0E6 */
+    --background: 48 64% 92%; /* Cream/beige #F8F3DF */
     --foreground: 150 50% 18%; /* Forest green #1B4D3E */
     --card: 45 33% 98%; /* Lighter cream */
     --card-foreground: 150 50% 18%;
     --popover: 45 33% 98%;
     --popover-foreground: 150 50% 18%;
     --primary: 150 50% 18%; /* Forest green */
-    --primary-foreground: 45 33% 94%;
+    --primary-foreground: 48 64% 92%;
     --secondary: 45 25% 88%; /* Slightly darker cream */
     --secondary-foreground: 150 50% 18%;
     --muted: 45 20% 85%;
     --muted-foreground: 150 30% 35%;
     --accent: 150 50% 18%; /* Forest green */
-    --accent-foreground: 45 33% 94%;
+    --accent-foreground: 48 64% 92%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 150 20% 75%;

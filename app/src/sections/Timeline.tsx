@@ -64,7 +64,7 @@ export default function Timeline() {
               >
                 {/* Number Circle */}
                 <div className="absolute left-0 top-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
-                  <span className="text-[#F5F0E6] font-bold text-sm sm:text-base">
+                  <span className="text-[#F8F3DF] font-bold text-sm sm:text-base">
                     {milestone.number}
                   </span>
                 </div>

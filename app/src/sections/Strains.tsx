@@ -94,7 +94,7 @@ export default function Strains() {
                 {strainCategories.map((cat, index) => (
                   <div
                     key={cat.id}
-                    className="absolute text-xs font-bold text-[#F5F0E6]"
+                    className="absolute text-xs font-bold text-[#F8F3DF]"
                     style={{
                       top: index === 0 ? '10%' : index === 2 ? 'auto' : '45%',
                       bottom: index === 2 ? '10%' : 'auto',

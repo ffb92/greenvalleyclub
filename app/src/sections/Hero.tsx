@@ -11,15 +11,11 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-secondary/30" />
-      
-      {/* Subtle pattern overlay */}
-      <div 
-        className="absolute inset-0 opacity-5"
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
+          backgroundImage:
+            "linear-gradient(to bottom, rgba(245, 240, 230, 0.9), rgba(245, 240, 230, 0.95)), url('https://images.unsplash.com/photo-1603909223429-69bb7101f420?w=1920&q=80')",
         }}
       />
 
@@ -52,7 +48,7 @@ export default function Hero() {
           <Button
             size="lg"
             onClick={() => scrollToSection('#pricing')}
-            className="bg-primary hover:bg-primary/90 text-[#F5F0E6] rounded-full px-8 py-6 text-base font-semibold group"
+            className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold group"
           >
             Jetzt Mitglied werden
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -61,7 +57,7 @@ export default function Hero() {
             size="lg"
             variant="outline"
             onClick={() => scrollToSection('#timeline')}
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-[#F5F0E6] rounded-full px-8 py-6 text-base font-semibold transition-all"
+            className="border-2 border-primary text-primary hover:bg-primary hover:text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold transition-all"
           >
             Mehr erfahren
           </Button>
