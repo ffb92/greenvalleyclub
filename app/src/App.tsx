@@ -5,7 +5,6 @@ import Hero from './sections/Hero';
 import Pricing from './sections/Pricing';
 import CannanasForm from './sections/CannanasForm';
 import Location from './sections/Location';
-import Strains from './sections/Strains';
 import QualityGrowth from './sections/QualityGrowth';
 import Team from './sections/Team';
 import FAQ from './sections/FAQ';
@@ -44,7 +43,6 @@ function App() {
         <Location />
         <Pricing />
         <CannanasForm />
-        <Strains />
         <Team />
         <FAQ />
       </main>

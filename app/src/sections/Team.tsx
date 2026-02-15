@@ -4,35 +4,35 @@ import { Badge } from '@/components/ui/badge';
 const teamMembers = [
   {
     id: 1,
-    name: 'Lenni',
-    role: 'ORGANISATIONSTALENT',
-    image: '/images/team/lenni.jpg',
+    name: 'Name 1',
+    role: 'Role 1',
+    image: '/images/team/placeholder.png',
     description:
-      'Masterstudent mit Vertiefung in Energietechnik an der TU Berlin. Hält alles zusammen und bewahrt den Überblick.',
+      'Description 1',
   },
   {
     id: 2,
-    name: 'Ruben',
-    role: 'ERDBEERBAUER',
-    image: '/images/team/ruben.jpg',
+    name: 'Name 2',
+    role: 'Role 2',
+    image: '/images/team/placeholder.png',
     description:
-      'Gelernter Gärtner und passionierter Obstbauer. Kümmert sich um Grow-Planung und Qualitätssicherung.',
+      'Description 2',
   },
   {
     id: 3,
-    name: 'Joshua',
-    role: 'IT-VERANTWORTLICHER',
-    image: '/images/team/joshua.jpg',
+    name: 'Name 3',
+    role: 'Role 3',
+    image: '/images/team/placeholder.png',
     description:
       'Wirtschaftsingenieur mit zwei Jahren Erfahrung als Webentwickler. Er sorgt für unsere digitale Infrastruktur.',
   },
   {
     id: 4,
-    name: 'Darius',
-    role: 'ALLROUNDER',
-    image: '/images/team/darius.jpg',
+    name: 'Name 4',
+    role: 'Role 4',
+    image: '/images/team/placeholder.png',
     description:
-      'Artist Manager. Bringt kreativen Wind und strukturiertes Management in unser Team.',
+      'Description 4',
   },
 ];
 
