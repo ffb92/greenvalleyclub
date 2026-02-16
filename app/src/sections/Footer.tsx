@@ -9,8 +9,7 @@ const footerLinks = {
   entdecken: [
     { label: 'Unsere Beiträge', href: '#pricing' },
     { label: 'Unser Team', href: '#team' },
-    { label: 'Strain Übersicht', href: '#strains' },
-    { label: 'Terpen Profil', href: '#strains' },
+    { label: 'Standorte', href: '#location' },
   ],
   rechtliches: [
     { label: 'Jugendschutz', href: '#' },
