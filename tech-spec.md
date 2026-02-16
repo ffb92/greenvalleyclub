@@ -1,4 +1,4 @@
-# HerbalHub Technical Specification
+# GreenValleyClub Technical Specification
 
 ## Component Inventory
 

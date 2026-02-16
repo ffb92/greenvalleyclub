@@ -35,7 +35,7 @@ export default function AgeGateModal() {
   };
 
   const handleDecline = () => {
-    window.location.assign('https://www.google.com');
+    window.location.assign('https://www.bioeg.de/');
   };
 
   return (
@@ -56,7 +56,7 @@ export default function AgeGateModal() {
           </DialogTitle>
 
           <DialogDescription className="mx-auto mt-5 max-w-[460px] text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            HerbalHub richtet sich ausschließlich an Erwachsene und verpflichtet
+            GreenValleyClub richtet sich ausschließlich an Erwachsene und verpflichtet
             sich zu konsequentem Jugendschutz. Bitte bestätige dein Alter,
             bevor du fortfährst.
           </DialogDescription>
