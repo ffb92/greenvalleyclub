@@ -56,7 +56,7 @@ export default function Hero() {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => scrollToSection('#timeline')}
+            onClick={() => scrollToSection('#location')}
             className="border-2 border-primary text-primary hover:bg-primary hover:text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold transition-all"
           >
             Mehr erfahren
