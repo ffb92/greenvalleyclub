@@ -1,5 +1,4 @@
-﻿import { ChevronDown } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+﻿import { Badge } from '@/components/ui/badge';
 
 const packages = [
   {
@@ -54,19 +53,6 @@ export default function Pricing() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mb-12 reveal">
-          <div className="inline-flex items-center gap-2 text-primary font-medium">
-            Upgrade
-            <ChevronDown className="w-5 h-5" />
-          </div>
-          <p className="text-sm text-muted-foreground mt-3 max-w-3xl mx-auto leading-relaxed">
-            Upgrades sind optional und dienen lediglich dazu, zusätzliche Mengen oberhalb der regulären
-            Abnahmemenge zu ermöglichen. Die tatsächliche Abnahme bleibt in jedem Fall freiwillig.
-            Upgrades stehen in Stufen von 12,5, 15 Gramm und 25 Gramm zur Verfügung, sofern die
-            gesetzliche Monatsobergrenze von fünfzig Gramm nicht überschritten wird.
-          </p>
         </div>
       </div>
     </section>

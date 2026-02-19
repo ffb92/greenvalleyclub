@@ -9,17 +9,12 @@ const faqs = [
   {
     question: 'Kann jeder Mitglied werden?',
     answer:
-      'Mitglied kann grundsätzlich jeder werden, der mindestens 18 Jahre alt ist und seinen Wohnsitz in Deutschland hat. Eine Aufnahme erfolgt nach Prüfung deiner Unterlagen und einem kurzen Gespräch.',
+      ' Personen die 21 Jahre oder älter sind und einen Wohnsitz in Deutschland haben, können Mitglied werden. Wir behalten uns vor, die Aufnahme nach einer persönlichen Vorstellung zu entscheiden.',
   },
   {
     question: 'Muss ich etwas zahlen, wenn ich auf Mitglied werden klicke?',
     answer:
       'Nein, das Klicken auf "Mitglied werden" ist kostenlos. Du erhältst zunächst alle Informationen und kannst dich dann entscheiden, ob du die Mitgliedschaft beginnen möchtest.',
-  },
-  {
-    question: 'Warum muss ich eine Anmeldegebühr von 50 € zahlen?',
-    answer:
-      'Die einmalige Anmeldegebühr deckt die administrativen Kosten der Mitgliedschaftsaufnahme und trägt zur Deckung der initialen Kosten des Clubs bei.',
   },
   {
     question: 'Dürfen Social Clubs Cannabis versenden?',
@@ -29,12 +24,7 @@ const faqs = [
   {
     question: 'Wie viel Cannabis bekomme ich als Mitglied von meinem Social Club?',
     answer:
-      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 7,5g bis 50g pro Monat an. Die genauen Kosten pro Gramm werden günstiger, je höher das Paket ist.',
-  },
-  {
-    question: 'Wer kann Mitglied werden?',
-    answer:
-      'Volljährige Personen mit Wohnsitz in Deutschland können Mitglied werden. Wir behalten uns vor, die Aufnahme nach einer persönlichen Vorstellung zu entscheiden.',
+      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 12,5g, 25g oder 50g pro Monat an.',
   },
   {
     question: 'Wie viele Mitglieder dürfen wir aufnehmen?',
@@ -49,17 +39,12 @@ const faqs = [
   {
     question: 'Wo ist die Anbau- und Abgabe-Location?',
     answer:
-      'Unser Anbau findet in Berlin statt. Die genaue Abgabestelle wird Mitgliedern nach der Registrierung mitgeteilt.',
-  },
-  {
-    question: 'Wer konsumiert eigentlich Cannabis?',
-    answer:
-      'Cannabis wird von Menschen aller Altersgruplen und Lebensbereichen konsumiert – sei es zur Entspannung, für kreative Zwecke oder aus medizinischen Gründen.',
+      'Unser Anbau findet in Bitterfeld statt. Die Abgabestelle ist in der Nähe des Berliner Hauptbahnhofs.',
   },
   {
     question: 'Wie ist der durchschnittliche THC-Gehalt des sich aktuell im Umlauf befindenden Cannabis?',
     answer:
-      'Der durchschnittliche THC-Gehalt im unregulierten Markt liegt bei etwa 15-20%. Unsere Sorten decken ein Spektrum von 15% bis über 21% THC ab.',
+      'Der durchschnittliche THC-Gehalt im unregulierten Markt liegt bei etwa 15-20%. Unsere Sorten decken ein Spektrum von 15% bis über 25% THC ab.',
   },
 ];
 
