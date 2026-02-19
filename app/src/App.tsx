@@ -6,7 +6,6 @@ import Pricing from './sections/Pricing';
 import CannanasForm from './sections/CannanasForm';
 import Location from './sections/Location';
 import QualityGrowth from './sections/QualityGrowth';
-import Team from './sections/Team';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
 
@@ -43,7 +42,6 @@ function App() {
         <Location />
         <Pricing />
         <CannanasForm />
-        <Team />
         <FAQ />
       </main>
       <Footer />

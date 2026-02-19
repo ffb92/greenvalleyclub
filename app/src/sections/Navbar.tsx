@@ -4,10 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
+  { label: 'Standorte', href: '#location' },
   { label: 'Beiträge', href: '#pricing' },
-  { label: 'Fahrplan', href: '#timeline' },
-  { label: 'Strains', href: '#strains' },
-  { label: 'Team', href: '#team' },
   { label: 'FAQ', href: '#faq' },
 ];
 

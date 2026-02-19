@@ -7,7 +7,7 @@ const stats = [
     icon: Sprout,
     value: 600,
     suffix: 'm2',
-    label: 'ANBAUFLAECHE',
+    label: 'ANBAUFLÄCHE',
   },
   {
     icon: Thermometer,
@@ -80,8 +80,8 @@ export default function QualityGrowth() {
 
         <div className="reveal stagger-1">
           <p className="text-lg sm:text-xl text-[#F8F3DF]/90 max-w-3xl mx-auto mb-16 leading-relaxed">
-            Auf ueber 600m2 Anbauflaeche zuechten wir unter strengsten Laborbedingungen.
-            Keine Pestizide, 100% organisch und handverlesen fuer das perfekte Terpenprofil.
+            Auf über 600m2 Anbaufläche züchten wir unter strengsten Laborbedingungen.
+            Keine Pestizide, 100% organisch und handverlesen für das perfekte Terpenprofil.
           </p>
         </div>
 
