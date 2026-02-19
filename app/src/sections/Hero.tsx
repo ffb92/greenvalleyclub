@@ -29,7 +29,7 @@ export default function Hero() {
 
         {/* Main Title */}
         <h1 className="animate-fade-up text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight">
-          Willkommen beim{' '}
+          Willkommen im{' '}
           <span className="text-gradient">Green Valley Club</span>
         </h1>
 

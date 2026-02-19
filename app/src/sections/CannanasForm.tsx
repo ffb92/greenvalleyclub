@@ -20,7 +20,7 @@ export default function CannanasForm() {
 
   return (
     <section id="cannannas" className="py-8 bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 mb-8 sm:px-6 lg:px-8">
         <div
           id="cannanas"
           data-key="yD8tHUL81vk85GrHl9Lk2SAzgTzmbY3Q"

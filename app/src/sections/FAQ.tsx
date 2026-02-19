@@ -24,27 +24,22 @@ const faqs = [
   {
     question: 'Wie viel Cannabis bekomme ich als Mitglied von meinem Social Club?',
     answer:
-      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 12,5g, 25g oder 50g pro Monat an.',
+      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 5g, 12,5g, 25g oder 50g pro Monat an. Desweiteren schreibt das Gesetz vor 50g im Monat und 25g pro Tag.',
   },
   {
     question: 'Wie viele Mitglieder dürfen wir aufnehmen?',
     answer:
-      'Die maximale Mitgliederzahl ist gesetzlich begrenzt. Wir achten darauf, eine ausgewogene Community aufzubauen und neue Mitglieder schrittweise aufzunehmen.',
+      'Die maximale Mitgliederzahl ist auf 500 Mitglieder begrenzt. Wir achten darauf, eine ausgewogene Community aufzubauen und neue Mitglieder schrittweise aufzunehmen.',
   },
   {
     question: 'Welche Strains bieten wir an?',
     answer:
-      'Wir bieten eine vielfältige Auswahl an Strains aus allen Kategorien: Sativa, Indica, Hybrid und unsere Signature-Sorten. Das Sortiment wird regelmäßig erweitert.',
+      'Wir bieten eine vielfältige Auswahl an Strains aus allen Kategorien: Sativa, Indica, Hybrid und unsere Signature-Sorten. Das Sortiment wird regelmäßig erweitert. Unsere Sorten decken ein Spektrum von 15% bis über 25% THC ab.',
   },
   {
     question: 'Wo ist die Anbau- und Abgabe-Location?',
     answer:
       'Unser Anbau findet in Bitterfeld statt. Die Abgabestelle ist in der Nähe des Berliner Hauptbahnhofs.',
-  },
-  {
-    question: 'Wie ist der durchschnittliche THC-Gehalt des sich aktuell im Umlauf befindenden Cannabis?',
-    answer:
-      'Der durchschnittliche THC-Gehalt im unregulierten Markt liegt bei etwa 15-20%. Unsere Sorten decken ein Spektrum von 15% bis über 25% THC ab.',
   },
 ];
 
