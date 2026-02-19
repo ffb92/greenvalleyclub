@@ -47,30 +47,12 @@ export default function Hero() {
         <div className="animate-fade-up flex flex-col sm:flex-row items-center justify-center gap-4" style={{ animationDelay: '0.2s' }}>
           <Button
             size="lg"
-            onClick={() => scrollToSection('#pricing')}
+            onClick={() => scrollToSection('#cannannas')}
             className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold group"
           >
             Jetzt Mitglied werden
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => scrollToSection('#location')}
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold transition-all"
-          >
-            Mehr erfahren
-          </Button>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <button
-            onClick={() => scrollToSection('#pricing')}
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </button>
         </div>
       </div>
 

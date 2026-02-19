@@ -72,7 +72,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button
-              onClick={() => scrollToSection('#pricing')}
+              onClick={() => scrollToSection('#cannannas')}
               className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-6"
             >
               Mitglied werden
@@ -98,7 +98,7 @@ export default function Navbar() {
                   </button>
                 ))}
                 <Button
-                  onClick={() => scrollToSection('#pricing')}
+                  onClick={() => scrollToSection('#cannannas')}
                   className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full mt-4"
                 >
                   Mitglied werden

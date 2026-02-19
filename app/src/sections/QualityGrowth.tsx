@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const stats = [
   {
     icon: Sprout,
-    value: 600,
+    value: 250,
     suffix: 'm2',
     label: 'ANBAUFLÄCHE',
   },
@@ -74,8 +74,8 @@ export default function QualityGrowth() {
 
         <div className="reveal stagger-1">
           <p className="text-lg sm:text-xl text-[#F8F3DF]/90 max-w-3xl mx-auto mb-16 leading-relaxed">
-            Auf über 600m2 Anbaufläche züchten wir unter strengsten Laborbedingungen.
-            Keine Pestizide, handverlesen für das perfekte Terpenprofil.
+Wir produzieren unter höchsten Qualitätsstandards nach GACP-Standard und selbstverständlich pestizidfrei.
+Jede Blüte wird handgetrimmt, jede Charge zusätzlich in einem Analyselabor geprüft – für maximale Reinheit, Sicherheit und gleichbleibend hohe Qualität.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function QualityGrowth() {
           <Button
             size="lg"
             onClick={() => {
-              document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
+              document.querySelector('#cannannas')?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="bg-[#F8F3DF] hover:bg-[#F8F3DF]/90 text-primary rounded-full px-8 py-6 text-base font-semibold group"
           >
