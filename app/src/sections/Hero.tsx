@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-scroll md:bg-fixed"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(245, 240, 230, 0.9), rgba(245, 240, 230, 0.95)), url('/images/logo.png')",
