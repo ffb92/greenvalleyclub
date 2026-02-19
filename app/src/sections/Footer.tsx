@@ -6,6 +6,7 @@ const footerLinks = {
     { label: '@greenvalley.gvc', href: 'https://www.instagram.com/greenvalley.gvc/', icon: Instagram },
   ],
   rechtliches: [
+    { label: 'Datenschutz', href: '/datenschutz' },
     { label: 'Impressum', href: '#' },
   ],
 };
