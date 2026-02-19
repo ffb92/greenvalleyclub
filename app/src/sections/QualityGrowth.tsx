@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Sprout, Thermometer, Leaf, ArrowRight } from 'lucide-react';
+import { Sprout, Thermometer, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const stats = [
@@ -14,12 +14,6 @@ const stats = [
     value: 24,
     suffix: '/7',
     label: 'KLIMAKONTROLLE',
-  },
-  {
-    icon: Leaf,
-    value: 100,
-    suffix: '%',
-    label: 'ORGANISCH',
   },
 ];
 
@@ -81,11 +75,11 @@ export default function QualityGrowth() {
         <div className="reveal stagger-1">
           <p className="text-lg sm:text-xl text-[#F8F3DF]/90 max-w-3xl mx-auto mb-16 leading-relaxed">
             Auf über 600m2 Anbaufläche züchten wir unter strengsten Laborbedingungen.
-            Keine Pestizide, 100% organisch und handverlesen für das perfekte Terpenprofil.
+            Keine Pestizide, handverlesen für das perfekte Terpenprofil.
           </p>
         </div>
 
-        <div className="reveal stagger-2 grid sm:grid-cols-3 gap-6 mb-12">
+        <div className="reveal stagger-2 grid sm:grid-cols-2 gap-6 mb-12">
           {stats.map((stat) => (
             <div
               key={stat.label}

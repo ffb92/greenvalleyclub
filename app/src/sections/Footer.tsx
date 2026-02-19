@@ -16,11 +16,9 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
           {/* Logo & Address */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <img
-              src="/images/logo.svg"
-              alt="Green Valley Club"
-              className="h-20 w-auto object-contain mb-6"
-            />
+            <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+              Standort
+            </h4>
             <div className="flex items-start gap-3 text-muted-foreground mb-2">
               <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
               <div>
