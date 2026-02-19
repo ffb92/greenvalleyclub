@@ -38,10 +38,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <QualityGrowth />
         <Location />
         <Pricing />
         <CannanasForm />
+        <QualityGrowth />
         <FAQ />
       </main>
       <Footer />

@@ -15,12 +15,13 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(245, 240, 230, 0.9), rgba(245, 240, 230, 0.95)), url('https://images.unsplash.com/photo-1603909223429-69bb7101f420?w=1920&q=80')",
+            "linear-gradient(to bottom, rgba(245, 240, 230, 0.9), rgba(245, 240, 230, 0.95)), url('/images/logo.png')",
         }}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+
         {/* Eyebrow */}
         <p className="animate-fade-in text-xs sm:text-sm font-medium tracking-[0.2em] text-primary uppercase mb-6">
           Cannabis Social Club Berlin

@@ -1,4 +1,4 @@
-import { MapPin, Train, Navigation } from 'lucide-react';
+import { Navigation } from 'lucide-react';
 
 export default function Location() {
   return (
