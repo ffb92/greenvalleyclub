@@ -87,7 +87,7 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-card">
-              <div className="flex flex-col gap-6 mt-8">
+              <div className="flex flex-col gap-6 mt-8 mx-4">
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
