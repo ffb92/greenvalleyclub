@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Sprout, Thermometer, ArrowRight } from 'lucide-react';
+import { Sprout, Thermometer, ArrowRight, Microscope } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const stats = [
@@ -14,6 +14,12 @@ const stats = [
     value: 24,
     suffix: '/7',
     label: 'KLIMAKONTROLLE',
+  },
+  {
+    icon: Microscope,
+    value: 100,
+    suffix: '%',
+    label: 'ANALYSELABOR GEPRÜFT',
   },
 ];
 
@@ -79,7 +85,7 @@ Jede Blüte wird handgetrimmt, jede Charge zusätzlich in einem Analyselabor gep
           </p>
         </div>
 
-        <div className="reveal stagger-2 grid sm:grid-cols-2 gap-6 mb-12">
+        <div className="reveal stagger-2 grid sm:grid-cols-3 gap-6 mb-12">
           {stats.map((stat) => (
             <div
               key={stat.label}
