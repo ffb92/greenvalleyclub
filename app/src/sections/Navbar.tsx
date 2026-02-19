@@ -39,7 +39,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <a
             href="#"
@@ -50,9 +50,9 @@ export default function Navbar() {
             }}
           >
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Green Valley Club"
-              className="h-20 w-auto object-contain"
+              className="h-24 w-auto object-contain"
             />
           </a>
 
