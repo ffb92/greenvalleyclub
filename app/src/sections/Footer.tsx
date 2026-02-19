@@ -7,13 +7,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import DatenschutzDialog from '@/components/DatenschutzDialog';
 
 const footerLinks = {
   kontakt: [
     { label: 'info@greenvalleyclub.de', href: 'mailto:info@greenvalleyclub.de', icon: Mail },
     { label: '@greenvalley.gvc', href: 'https://www.instagram.com/greenvalley.gvc/', icon: Instagram },
   ],
-  rechtliches: [],
 };
 
 export default function Footer() {
@@ -59,42 +59,8 @@ export default function Footer() {
               Rechtliches
             </h4>
             <ul className="space-y-3 lg:flex lg:flex-col lg:items-end">
-              {footerLinks.rechtliches.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
               <li>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <button
-                      type="button"
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      Datenschutz
-                    </button>
-                  </DialogTrigger>
-                  <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-2xl">
-                    <DialogHeader>
-                      <DialogTitle>Datenschutz</DialogTitle>
-                      <DialogDescription asChild>
-                        <div className="space-y-2 pt-2 text-sm text-foreground leading-relaxed">
-                          <p>
-                            Platzhaltertext: Fuege hier deine vollstaendige Datenschutzerklaerung ein.
-                          </p>
-                          <p>
-                            Dieser Bereich ist nur ein einfacher Popup-Container und kann jederzeit ersetzt werden.
-                          </p>
-                        </div>
-                      </DialogDescription>
-                    </DialogHeader>
-                  </DialogContent>
-                </Dialog>
+                <DatenschutzDialog />
               </li>
               <li>
                 <Dialog>
