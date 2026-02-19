@@ -1,36 +1,26 @@
-import { MapPin, Mail, Instagram } from 'lucide-react';
+import { Mail, Instagram } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 const footerLinks = {
   kontakt: [
     { label: 'info@greenvalleyclub.de', href: 'mailto:info@greenvalleyclub.de', icon: Mail },
     { label: '@greenvalley.gvc', href: 'https://www.instagram.com/greenvalley.gvc/', icon: Instagram },
   ],
-  rechtliches: [
-    { label: 'Datenschutz', href: '/datenschutz' },
-    { label: 'Impressum', href: '#' },
-  ],
+  rechtliches: [{ label: 'Datenschutz', href: '/datenschutz' }],
 };
 
 export default function Footer() {
   return (
     <footer className="bg-card border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
-          {/* Logo & Address */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
-              Standort
-            </h4>
-            <div className="flex items-start gap-3 text-muted-foreground mb-2">
-              <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-              <div>
-                <p>Sonnenallee 14-30</p>
-                <p>06766 Bitterfeld</p>
-                <p>Vereinsregister Stendal: VR6882</p>
-              </div>
-            </div>
-          </div>
-
+        <div className="grid sm:grid-cols-2 gap-10 lg:gap-8">
           {/* Kontakt */}
           <div>
             <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
@@ -69,6 +59,31 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button
+                      type="button"
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      Impressum
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Impressum</DialogTitle>
+                      <DialogDescription asChild>
+                        <div className="space-y-1 pt-2 text-sm text-foreground">
+                          <p>Green Valley Club e.V.</p>
+                          <p>Sonnenallee 14-30</p>
+                          <p>06766 Bitterfeld</p>
+                          <p>Vereinsregister Stendal: VR6882</p>
+                        </div>
+                      </DialogDescription>
+                    </DialogHeader>
+                  </DialogContent>
+                </Dialog>
+              </li>
             </ul>
           </div>
         </div>
@@ -79,10 +94,10 @@ export default function Footer() {
             <span className="font-semibold text-foreground">Green Valley Club</span>
           </p>
           <p className="text-sm text-muted-foreground">
-            Â© 2026 Green Valley Club e.V. Alle Rechte vorbehalten.
+            © 2026 Green Valley Club e.V. Alle Rechte vorbehalten.
           </p>
           <p className="text-sm text-muted-foreground">
-            QualitÃ¤t. Gemeinschaft. Vertrauen.
+            Qualität. Gemeinschaft. Vertrauen.
           </p>
         </div>
       </div>
