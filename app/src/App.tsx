@@ -8,14 +8,9 @@ import Location from './sections/Location';
 import QualityGrowth from './sections/QualityGrowth';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
-import DatenschutzPage from './pages/DatenschutzPage';
 
 function App() {
-  const isDatenschutzRoute = window.location.pathname.replace(/\/+$/, '') === '/datenschutz';
-
   useEffect(() => {
-    if (isDatenschutzRoute) return;
-
     // Scroll reveal observer
     const observerCallback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
@@ -35,11 +30,7 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, [isDatenschutzRoute]);
-
-  if (isDatenschutzRoute) {
-    return <DatenschutzPage />;
-  }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
