@@ -1,8 +1,9 @@
-import { MapPin, Mail } from 'lucide-react';
+import { MapPin, Mail, Instagram } from 'lucide-react';
 
 const footerLinks = {
   kontakt: [
     { label: 'info@greenvalleyclub.de', href: 'mailto:info@greenvalleyclub.de', icon: Mail },
+    { label: '@greenvalley.gvc', href: 'https://www.instagram.com/greenvalley.gvc/', icon: Instagram },
   ],
   rechtliches: [
     { label: 'Impressum', href: '#' },
@@ -39,6 +40,8 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <link.icon className="w-4 h-4" />
