@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Sprout, Thermometer, ArrowRight, Microscope } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Sprout, Thermometer, Microscope } from 'lucide-react';
 
 const stats = [
   {
