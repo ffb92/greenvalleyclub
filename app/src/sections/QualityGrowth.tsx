@@ -80,7 +80,7 @@ export default function QualityGrowth() {
 
         <div className="reveal stagger-1">
           <p className="text-lg sm:text-xl text-[#F8F3DF]/90 max-w-3xl mx-auto mb-16 leading-relaxed">
-Wir produzieren unter höchsten Qualitätsstandards nach GACP-Standard und selbstverständlich pestizidfrei.
+Wir produzieren unter höchsten Qualitätsstandards nach GACP-Standard und pestizidfrei.
 Jede Blüte wird handgetrimmt, jede Charge zusätzlich in einem Analyselabor geprüft – für maximale Reinheit, Sicherheit und gleichbleibend hohe Qualität.
           </p>
         </div>

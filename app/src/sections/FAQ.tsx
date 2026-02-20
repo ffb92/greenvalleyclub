@@ -9,7 +9,7 @@ const faqs = [
   {
     question: 'Kann jeder Mitglied werden?',
     answer:
-      ' Personen die 21 Jahre oder älter sind und einen Wohnsitz in Deutschland haben, können Mitglied werden. Wir behalten uns vor, die Aufnahme nach einer persönlichen Vorstellung zu entscheiden.',
+      ' Personen die 21 Jahre oder älter sind und einen Wohnsitz in Deutschland haben, können Mitglied werden. Die Aufnahme erfolgt nach sorgfältiger Prüfung deiner Anmeldedaten. Sobald alle Angaben verifiziert wurden, bestätigen wir deine Mitgliedschaft',
   },
   {
     question: 'Muss ich etwas zahlen, wenn ich auf Mitglied werden klicke?',
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'Wie viel Cannabis bekomme ich als Mitglied von meinem Social Club?',
     answer:
-      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 5g, 12,5g, 25g oder 50g pro Monat an. Desweiteren schreibt das Gesetz vor 50g im Monat und 25g pro Tag.',
+      'Die Menge richtet sich nach deinem gewählten Paket. Wir bieten Staffelungen von 5g, 12,5g, 25g oder 50g pro Monat an. Die tatsächliche Abgabemenge kann durch zusätzliche Upgrades erhöht werden. Desweiteren schreibt das Gesetz vor 50g im Monat und 25g pro Tag.',
   },
   {
     question: 'Wie viele Mitglieder dürfen wir aufnehmen?',

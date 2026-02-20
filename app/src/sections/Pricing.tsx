@@ -17,7 +17,7 @@ export default function Pricing() {
             Unsere Beitragsoptionen
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Bei uns erhältst du hochwertige Qualität zu einem fairen Preis von nur <strong>5,95 € pro Gramm</strong>. Transparente Beitragsoptionen, flexibel wählbar und ganz ohne versteckte Kosten – selbstverständlich <strong>ohne Eintragsgebühr</strong>.
+            Bei uns erhältst du hochwertige Qualität zu einem fairen Preis von nur <strong>5,95 € pro Gramm</strong>. Transparente Beitragsoptionen, flexibel wählbar und ganz ohne versteckte Kosten – selbstverständlich <strong>ohne Anmeldegebühr</strong>.
           </p>
         </div>
 
