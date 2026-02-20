@@ -13,7 +13,7 @@ const fees = [
     id: 'aufnahme',
     label: 'Aufnahmegebühr',
     amount: '0€',
-    suffix: 'Anmeldegebühr',
+    suffix: '',
     icon: BadgeCheck,
     solid: true,
   },
