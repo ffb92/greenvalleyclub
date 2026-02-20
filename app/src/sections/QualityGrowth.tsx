@@ -99,19 +99,6 @@ Jede Blüte wird handgetrimmt, jede Charge zusätzlich in einem Analyselabor gep
             </div>
           ))}
         </div>
-
-        <div className="reveal stagger-3">
-          <Button
-            size="lg"
-            onClick={() => {
-              document.querySelector('#cannannas')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="bg-[#F8F3DF] hover:bg-[#F8F3DF]/90 text-primary rounded-full px-8 py-6 text-base font-semibold group"
-          >
-            Jetzt Mitglied werden
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
       </div>
     </section>
   );
