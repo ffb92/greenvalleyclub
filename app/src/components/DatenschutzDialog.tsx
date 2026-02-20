@@ -18,11 +18,11 @@ export default function DatenschutzDialog() {
           Datenschutz
         </button>
       </DialogTrigger>
-      <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-2xl">
+      <DialogContent className="max-h-[85vh] overflow-x-hidden overflow-y-auto p-4 sm:max-w-2xl sm:p-6">
         <DialogHeader>
           <DialogTitle>Datenschutzerklärung</DialogTitle>
           <DialogDescription asChild>
-            <div className="space-y-3 pt-2 text-sm text-foreground leading-relaxed text-left">
+            <div className="space-y-3 pt-2 text-left text-sm leading-relaxed text-foreground break-words [overflow-wrap:anywhere] [&_a]:break-all">
 
 <h2>1. Datenschutzhinweis</h2>
 <p>
@@ -706,4 +706,3 @@ Die durch Einsen und Nullen erstellten Inhalte und Werke auf diesen Seiten unter
     </Dialog>
   );
 }
-
