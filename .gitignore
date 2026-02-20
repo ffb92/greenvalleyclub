@@ -18,4 +18,5 @@ build/
 .DS_Store
 Thumbs.db
 
-AI/
+AGENTS.md
+tech-spec.md
