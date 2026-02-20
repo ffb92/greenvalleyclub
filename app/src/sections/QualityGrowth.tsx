@@ -68,6 +68,14 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
 export default function QualityGrowth() {
   return (
     <section className="relative py-32 overflow-hidden bg-primary">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-scroll md:bg-fixed"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, rgba(26, 66, 53, 0.88), rgba(26, 66, 53, 0.92)), url('/images/quality-growth.JPEG')",
+        }}
+      />
+
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="reveal">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
