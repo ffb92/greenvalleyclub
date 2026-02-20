@@ -1,8 +1,8 @@
 const packages = [
-  { id: '5', title: '5g' },
-  { id: '12-5', title: '12,5g' },
-  { id: '25', title: '25g' },
-  { id: '50', title: '50g' },
+  { id: '5', title: '5g', price: '29,75€' },
+  { id: '12-5', title: '12,5g', price: '74,38€' },
+  { id: '25', title: '25g', price: '148,75€' },
+  { id: '50', title: '50g', price: '297,50€' },
 ];
 
 export default function Pricing() {
@@ -17,7 +17,7 @@ export default function Pricing() {
             Unsere Beitragsoptionen
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Bei uns erhältst du hochwertige Qualität zu einem fairen Preis von nur <strong>5,95 € pro Gramm</strong>. Transparente Beitragsoptionen, flexibel wählbar und ganz ohne versteckte Kosten – selbstverständlich <strong>ohne Anmeldegebühr</strong>.
+            Bei uns erhältst du hochwertige Qualität zu einem fairen Preis von nur <strong>5,95€ inklusive MwSt. pro Gramm</strong>. Transparente Beitragsoptionen, flexibel wählbar und ganz ohne versteckte Kosten – selbstverständlich <strong>ohne Anmeldegebühr</strong>.
           </p>
         </div>
 
@@ -29,7 +29,10 @@ export default function Pricing() {
             >
               <div className="text-center">
                 <p className="text-4xl lg:text-5xl font-bold text-foreground mb-3">{pkg.title}</p>
-                <p className="text-sm text-muted-foreground">pro Monat</p>
+                <p className="text-sm text-muted-foreground">
+                  <span>{pkg.price} pro Monat</span>
+                  <span className="block text-xs mt-1">(inkl. MwSt.)</span>
+                </p>
               </div>
             </div>
           ))}
