@@ -6,6 +6,7 @@ import Pricing from './sections/Pricing';
 import CannanasForm from './sections/CannanasForm';
 import Location from './sections/Location';
 import QualityGrowth from './sections/QualityGrowth';
+import StayConnected from './sections/StayConnected';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
 
@@ -42,6 +43,7 @@ function App() {
         <Pricing />
         <CannanasForm />
         <QualityGrowth />
+        <StayConnected />
         <FAQ />
       </main>
       <Footer />
