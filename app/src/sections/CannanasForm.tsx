@@ -24,7 +24,7 @@ export default function CannanasForm() {
         <div
           id="cannanas"
           data-key="yD8tHUL81vk85GrHl9Lk2SAzgTzmbY3Q"
-          className="reveal"
+          className="reveal h-[85vh] min-h-[640px] max-h-[980px] overflow-y-auto overscroll-contain rounded-2xl"
         />
       </div>
     </section>

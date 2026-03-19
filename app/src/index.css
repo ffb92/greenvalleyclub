@@ -146,6 +146,18 @@
 .stagger-4 { transition-delay: 0.4s; }
 .stagger-5 { transition-delay: 0.5s; }
 
+/* Cannanas embed: keep a fixed viewport and scroll inside the form container */
+#cannanas {
+  position: relative;
+}
+
+#cannanas > *,
+#cannanas iframe {
+  width: 100% !important;
+  min-height: 100% !important;
+  height: 100% !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
