@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -7,6 +7,7 @@ import {
   DialogDescription,
   DialogTitle,
 } from '@/components/ui/dialog';
+import { useI18n } from '@/i18n/use-i18n';
 
 const AGE_VERIFIED_KEY = 'greenvalleyclub-age-verified';
 
@@ -23,6 +24,7 @@ function shouldShowAgeGate() {
 }
 
 export default function AgeGateModal() {
+  const { t } = useI18n();
   const [open, setOpen] = useState(shouldShowAgeGate);
 
   const handleConfirm = () => {
@@ -52,13 +54,11 @@ export default function AgeGateModal() {
           </div>
 
           <DialogTitle className="text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-[48px]">
-            Bist du über 21?
+            {t('age.title')}
           </DialogTitle>
 
           <DialogDescription className="mx-auto mt-5 max-w-[460px] text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            GreenValleyClub richtet sich ausschließlich an Erwachsene und verpflichtet
-            sich zu konsequentem Jugendschutz. Bitte bestätige dein Alter,
-            bevor du fortfährst.
+            {t('age.description')}
           </DialogDescription>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
@@ -67,7 +67,7 @@ export default function AgeGateModal() {
               onClick={handleConfirm}
               className="h-12 min-w-[220px] rounded-full bg-primary px-8 text-base font-bold tracking-wide text-primary-foreground uppercase hover:bg-primary/90"
             >
-              Ja, ich bin über 21
+              {t('age.confirm')}
             </Button>
             <Button
               type="button"
@@ -75,19 +75,19 @@ export default function AgeGateModal() {
               onClick={handleDecline}
               className="h-12 min-w-[220px] rounded-full border-primary/35 bg-transparent px-8 text-base font-bold tracking-wide text-primary uppercase hover:bg-primary/10"
             >
-              Nein
+              {t('age.decline')}
             </Button>
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">
-            Mehr zu unseren{' '}
+            {t('age.more')}{' '}
             <a
               href="https://www.bzga.de/jugendschutz/"
               target="_blank"
               rel="noreferrer"
               className="text-foreground underline underline-offset-2 transition-colors hover:text-primary"
             >
-              Jugendschutz-Richtlinien
+              {t('age.guidelines')}
             </a>
             .
           </p>

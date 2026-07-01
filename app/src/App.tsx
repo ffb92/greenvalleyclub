@@ -1,4 +1,5 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
+import { I18nProvider } from './i18n/use-i18n';
 import AgeGateModal from './components/AgeGateModal';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
@@ -10,7 +11,7 @@ import StayConnected from './sections/StayConnected';
 import FAQ from './sections/FAQ';
 import Footer from './sections/Footer';
 
-function App() {
+function AppContent() {
   useEffect(() => {
     // Scroll reveal observer
     const observerCallback: IntersectionObserverCallback = (entries) => {
@@ -48,6 +49,14 @@ function App() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <I18nProvider>
+      <AppContent />
+    </I18nProvider>
   );
 }
 
