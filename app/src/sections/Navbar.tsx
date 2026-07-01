@@ -2,17 +2,20 @@ import { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-
-const navLinks = [
-  { label: 'Standorte', href: '#location' },
-  { label: 'Beiträge', href: '#pricing' },
-  { label: 'Kontakt', href: '#kontakt' },
-  { label: 'FAQ', href: '#faq' },
-];
+import { useI18n } from '@/i18n/use-i18n';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Navbar() {
+  const { t } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navLinks = [
+    { label: t('nav.locations'), href: '#location' },
+    { label: t('nav.pricing'), href: '#pricing' },
+    { label: t('nav.contact'), href: '#kontakt' },
+    { label: t('nav.faq'), href: '#faq' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +36,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`relative z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-background/95 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
@@ -58,7 +61,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.href}
@@ -68,6 +71,9 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+
+            {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
 
           {/* CTA Button */}
@@ -76,37 +82,40 @@ export default function Navbar() {
               onClick={() => scrollToSection('#cannannas')}
               className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-6"
             >
-              Mitglied werden
+              {t('nav.cta')}
             </Button>
           </div>
 
           {/* Mobile Menu */}
-          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-            <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon">
-                <Menu className="w-6 h-6" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-card">
-              <div className="flex flex-col gap-6 mt-8 mx-4">
-                {navLinks.map((link) => (
-                  <button
-                    key={link.href}
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-lg font-medium text-foreground hover:text-primary transition-colors text-left"
-                  >
-                    {link.label}
-                  </button>
-                ))}
-                <Button
-                  onClick={() => scrollToSection('#cannannas')}
-                  className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full mt-4"
-                >
-                  Mitglied werden
+          <div className="flex items-center gap-3 lg:hidden">
+            <LanguageSwitcher />
+            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="w-6 h-6" />
                 </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-card">
+                <div className="flex flex-col gap-6 mt-8 mx-4">
+                  {navLinks.map((link) => (
+                    <button
+                      key={link.href}
+                      onClick={() => scrollToSection(link.href)}
+                      className="text-lg font-medium text-foreground hover:text-primary transition-colors text-left"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                  <Button
+                    onClick={() => scrollToSection('#cannannas')}
+                    className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full mt-4"
+                  >
+                    {t('nav.cta')}
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </nav>
     </header>

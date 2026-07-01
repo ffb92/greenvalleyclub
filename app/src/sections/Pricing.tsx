@@ -1,23 +1,5 @@
 import { BadgeCheck, PiggyBank } from 'lucide-react';
-
-const fees = [
-  {
-    id: 'gramm',
-    label: 'Preis pro Gramm',
-    amount: '5,95€',
-    suffix: 'inkl. MwSt.',
-    icon: PiggyBank,
-    solid: false,
-  },
-  {
-    id: 'aufnahme',
-    label: 'Anmeldegebühr',
-    amount: '0€',
-    suffix: '',
-    icon: BadgeCheck,
-    solid: true,
-  },
-] as const;
+import { useI18n } from '@/i18n/use-i18n';
 
 const packages = [
   { id: '5', title: '5g', price: '29,75€' },
@@ -27,21 +9,39 @@ const packages = [
 ];
 
 export default function Pricing() {
+  const { t } = useI18n();
+
+  const fees = [
+    {
+      id: 'gramm',
+      label: t('pricing.per_gram'),
+      amount: '5,95€',
+      suffix: t('pricing.incl_vat'),
+      icon: PiggyBank,
+      solid: false,
+    },
+    {
+      id: 'aufnahme',
+      label: t('pricing.reg_fee'),
+      amount: '0€',
+      suffix: '',
+      icon: BadgeCheck,
+      solid: true,
+    },
+  ] as const;
+
   return (
     <section id="pricing" className="py-24 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <p className="text-xs font-medium tracking-[0.2em] text-primary uppercase mb-4">
-            Mitgliedschaft
+            {t('pricing.eyebrow')}
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Unsere Beitragsoptionen
+            {t('pricing.title')}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Bei uns erhältst du hochwertige Qualität zu einem fairen Preis von nur{' '}
-            <strong>5,95€ inklusive MwSt. pro Gramm</strong>. Transparente
-            Beitragsoptionen, flexibel wählbar und ganz ohne versteckte Kosten -
-            selbstverständlich <strong>ohne Anmeldegebühr</strong>.
+            {t('pricing.desc')}
           </p>
         </div>
 
@@ -111,8 +111,12 @@ export default function Pricing() {
                   {pkg.title}
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <span>{pkg.price} pro Monat</span>
-                  <span className="block text-xs mt-1">(inkl. MwSt.)</span>
+                  <span>
+                    {pkg.price} {t('pricing.per_month')}
+                  </span>
+                  <span className="block text-xs mt-1">
+                    {t('pricing.incl_vat')}
+                  </span>
                 </p>
               </div>
             </div>

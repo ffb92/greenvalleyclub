@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useI18n } from '@/i18n/use-i18n';
 
 export default function Hero() {
+  const { t } = useI18n();
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -21,37 +24,44 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-
         {/* Eyebrow */}
         <p className="animate-fade-in text-xs sm:text-sm font-medium tracking-[0.2em] text-primary uppercase mb-6">
-          Cannabis Social Club Berlin
+          {t('hero.eyebrow')}
         </p>
 
         {/* Main Title */}
         <h1 className="animate-fade-up text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight">
-          Willkommen im{' '}
-          <span className="text-gradient">Green Valley Club</span>
+          {t('hero.welcome')}{' '}
+          <span className="text-gradient">{t('hero.brand')}</span>
         </h1>
 
         {/* Tagline */}
-        <p className="animate-fade-up text-lg text-primary/80 font-medium mb-4" style={{ animationDelay: '0.05s' }}>
-          Qualität. Gemeinschaft. Vertrauen.
+        <p
+          className="animate-fade-up text-lg text-primary/80 font-medium mb-4"
+          style={{ animationDelay: '0.05s' }}
+        >
+          {t('hero.tagline')}
         </p>
 
         {/* Subtitle */}
-        <p className="animate-fade-up text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDelay: '0.1s' }}>
-          Dein legaler Cannabis Social Club in Berlin. Wir bauen hochwertiges 
-          Cannabis an – kontrolliert, transparent und fair.
+        <p
+          className="animate-fade-up text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          style={{ animationDelay: '0.1s' }}
+        >
+          {t('hero.subtitle')}
         </p>
 
         {/* CTA Buttons */}
-        <div className="animate-fade-up flex flex-col sm:flex-row items-center justify-center gap-4" style={{ animationDelay: '0.2s' }}>
+        <div
+          className="animate-fade-up flex flex-col sm:flex-row items-center justify-center gap-4"
+          style={{ animationDelay: '0.2s' }}
+        >
           <Button
             size="lg"
             onClick={() => scrollToSection('#cannannas')}
             className="bg-primary hover:bg-primary/90 text-[#F8F3DF] rounded-full px-8 py-6 text-base font-semibold group"
           >
-            Jetzt Mitglied werden
+            {t('hero.cta')}
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

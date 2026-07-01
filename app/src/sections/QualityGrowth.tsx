@@ -1,26 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Sprout, Thermometer, Microscope } from 'lucide-react';
-
-const stats = [
-  {
-    icon: Sprout,
-    value: 250,
-    suffix: 'm2',
-    label: 'ANBAUFLÄCHE',
-  },
-  {
-    icon: Thermometer,
-    value: 24,
-    suffix: '/7',
-    label: 'KLIMAKONTROLLE',
-  },
-  {
-    icon: Microscope,
-    value: 100,
-    suffix: '%',
-    label: 'ANALYSELABOR GEPRÜFT',
-  },
-];
+import { useI18n } from '@/i18n/use-i18n';
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   const [count, setCount] = useState(0);
@@ -47,7 +27,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
           }, duration / steps);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) {
@@ -66,6 +46,29 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
 }
 
 export default function QualityGrowth() {
+  const { t } = useI18n();
+
+  const stats = [
+    {
+      icon: Sprout,
+      value: 250,
+      suffix: 'm2',
+      label: t('quality.stat_area'),
+    },
+    {
+      icon: Thermometer,
+      value: 24,
+      suffix: '/7',
+      label: t('quality.stat_climate'),
+    },
+    {
+      icon: Microscope,
+      value: 100,
+      suffix: '%',
+      label: t('quality.stat_lab'),
+    },
+  ];
+
   return (
     <section className="relative py-32 overflow-hidden bg-primary">
       <div
@@ -79,16 +82,15 @@ export default function QualityGrowth() {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="reveal">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            <span className="text-[#F8F3DF]">High-End Quality</span>
+            <span className="text-[#F8F3DF]">{t('quality.title_1')}</span>
             <br />
-            <span className="text-[#DDEBDF]">Controlled Growth</span>
+            <span className="text-[#DDEBDF]">{t('quality.title_2')}</span>
           </h2>
         </div>
 
         <div className="reveal stagger-1">
           <p className="text-lg sm:text-xl text-[#F8F3DF]/90 max-w-3xl mx-auto mb-16 leading-relaxed">
-Wir produzieren unter höchsten Qualitätsstandards nach GACP-Standard und pestizidfrei.
-Jede Blüte wird handgetrimmt, jede Charge zusätzlich in einem Analyselabor geprüft – für maximale Reinheit, Sicherheit und gleichbleibend hohe Qualität.
+            {t('quality.desc')}
           </p>
         </div>
 
