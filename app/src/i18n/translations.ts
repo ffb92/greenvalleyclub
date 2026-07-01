@@ -207,7 +207,7 @@ const en: Record<keyof typeof de, string> = {
     'No, cannabis can only be collected in person at the designated pickup location. Delivery by mail is not permitted.',
   'faq.q4': 'How much cannabis do I get as a member of my Social Club?',
   'faq.a4':
-    'The amount depends on your chosen package. We offer tiers of 5g, 12.5g, 25g, or 50g per month. The actual delivery amount can be increased through additional upgrades. Furthermore, the law stipulates a maximum of 50g per month and 25g per day.',
+    'The amount depends on your chosen package. We offer tiers of 5g, 12.5g, 25g, or 50g per month. The amount dispensed can be increased through additional upgrades. Please note that German law stipulates a maximum of 50g per month and 25g per day.',
   'faq.q5': 'How many members can you accept?',
   'faq.a5':
     'The maximum number of members is capped at 500. We take care to build a balanced community and admit new members gradually.',
